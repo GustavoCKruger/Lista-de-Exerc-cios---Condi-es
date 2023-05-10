@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    const nota1 = Number(prompt("Informe a nota do primerio trimeste:"))
+    const nota2 = Number(prompt("Informe a nota do segundo trimestre"))
+    const nota3 = Number(prompt("Informe a nota do terceiro trimestre"))
+    const totalNota = (nota1 + nota2 + nota3) / 3
+
+    if(totalNota <= 4){
+        alert(`Você foi reprovado(a)!`)
+    }
+    else if(totalNota < 6 ){
+        alert(`Você ficou em exame!`)
+    }
+    else if(totalNota >= 6){
+        alert(`Você foi aprovado(a)`)
+    }
+
+    alert(`Sua nota é ${totalNota.toFixed(1).replace(".",",")}`)
+</script>
