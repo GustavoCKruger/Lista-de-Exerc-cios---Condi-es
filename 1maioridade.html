@@ -6,12 +6,10 @@
     const anoDNascimento = Number(prompt("Informe em que ano você nasceu:"));
 
     //Processamento
-    const idade = 2023 - anoDNascimento
-    const MenorIdade = 18 - idade
-    if(idade >= 18){
-        alert(`Você atingiu a maioridade!, você tem ${idade} anos`);
+    if(new Date().getFullYear() - anoDNascimento >= 18){
+        alert(`Você já atingiu a maioridade`)
     }
-    else if(idade < 18){
-        alert(`Você ainda não atingiu a maioridade, falta ${MenorIdade} anos`);
+    else{
+        alert(`Você ainda não atingiu a maioridade`)
     }
 </script>
