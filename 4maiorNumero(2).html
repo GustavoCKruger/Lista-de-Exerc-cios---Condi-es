@@ -4,6 +4,10 @@
     const numero1 = Number(prompt("Informe um número:"));
     const numero2 = Number(prompt("Informe outro número novamente:"));
     const numero3 = Number(prompt("Infrome novamente outro número:"));
+    if (isNaN(numero1) || isNaN(numero2)) {
+        alert(`Um dos três não é um número`)
+    }
+    else{
     if(numero1 > numero2 && numero1 > numero3){
         alert(`O número ${numero1} é maior que ${numero2} e ${numero3}`)
     }
@@ -13,4 +17,5 @@
     else if(numero3 > numero1 && numero3 > numero2){
         alert(`O número ${numero3} é maior que ${numero1} e ${numero2}`)
     }
+}
 </script>
