@@ -5,10 +5,20 @@
     //Entrada
     const idade = Number(prompt("Informe sua idade, e vamos ver se você esta apto para votar"));
 
-    if(idade >= 16){
-        alert(`Você está apto para votar!`);
+    if (idade >= 16) {
+        const nEleitor = prompt("Você tem título de eleitor? S ou N").toUpperCase().trim();
+        if (nEleitor == "S") {
+            alert(`Você está apto a votar!`)
+        }
+        else if (nEleitor == "N") {
+            alert(`Você tem que fazer a carteira de eleitor!`)
+        }
+        else{
+            alert(`Opção Inválida!`)
+        }
     }
-    else if(idade < 16){
+
+    else {
         alert(`Você não está apto para votar`)
     }
 </script>
