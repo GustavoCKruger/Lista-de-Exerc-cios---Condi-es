@@ -2,10 +2,15 @@
 <script>
     /*Peça para o usuário informar uma letra e diga se esta letra é uma vogal ou uma consoante.*/
     const letra = prompt("Informe uma letra, e diremos se é vogal ou uma consoante:").toLowerCase().trim()
+    if(letra.length == 1){
     if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
         alert(`É uma vogal`)
     }
     else{
         alert(`É uma consoante`)
     }
+}
+else{
+    alert(`Informe apenas uma letra!`)
+}
 </script>
